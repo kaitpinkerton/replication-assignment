@@ -1,0 +1,2 @@
+I did have an issue when trying to use the tidy function to create the table as a dataframe from all of the different feols regressions.
+I did have to use Google to figure it out, and I noted where I used it in the code.
