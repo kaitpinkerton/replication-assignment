@@ -1,0 +1,32 @@
+dag {
+bb="-7.763,-7.991,6.469,6.244"
+"counter-mobilization" [outcome,pos="-1.586,0.739"]
+"country-wide election characteristics" [adjusted,pos="-0.110,4.641"]
+"historical discrimination" [pos="-6.577,-6.805"]
+"increased voting costs" [outcome,pos="1.330,-1.621"]
+"post-2013 shelby exposure" [exposure,pos="-3.995,-1.789"]
+"preclearance coverage" [pos="-6.396,-3.935"]
+"race-based participation" [adjusted,pos="5.283,2.982"]
+"race-specific campaign mobilization" [latent,pos="3.653,4.910"]
+"restrictive voting policies" [outcome,pos="-1.153,-3.550"]
+"state-specific election characteristics" [adjusted,pos="-1.074,2.647"]
+"voter turnout (black vs white)" [outcome,pos="2.120,1.836"]
+age [adjusted,pos="5.252,0.606"]
+gender [adjusted,pos="3.844,-1.093"]
+race [pos="-2.145,-1.564"]
+"counter-mobilization" -> "voter turnout (black vs white)"
+"country-wide election characteristics" -> "voter turnout (black vs white)"
+"historical discrimination" -> "preclearance coverage"
+"increased voting costs" -> "voter turnout (black vs white)"
+"post-2013 shelby exposure" -> "counter-mobilization"
+"post-2013 shelby exposure" -> "restrictive voting policies"
+"preclearance coverage" -> "post-2013 shelby exposure"
+"race-based participation" -> "voter turnout (black vs white)"
+"race-specific campaign mobilization" -> "voter turnout (black vs white)"
+"restrictive voting policies" -> "increased voting costs"
+"state-specific election characteristics" -> "voter turnout (black vs white)"
+age -> "voter turnout (black vs white)"
+gender -> "voter turnout (black vs white)"
+race -> "counter-mobilization"
+race -> "restrictive voting policies"
+}
